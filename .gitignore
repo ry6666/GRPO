@@ -11,10 +11,6 @@ env/
 .venv/
 env/
 
-# 数据集
-dataset/
-datasets/
-data/
 
 # IDE
 .vscode/
