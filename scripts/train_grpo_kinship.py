@@ -9,9 +9,20 @@ GRPO亲属关系数据集训练脚本
 2. 生成单跳和多跳问答对
 3. 使用知识图谱上下文增强推理
 4. 完整的训练和评估流程
+5. 支持加载SFT训练后的模型继续优化
+
+SFT → GRPO 训练流程：
+1. 先运行 SFT 训练：python scripts/train_sft_kinship.py --epochs 3
+2. 再运行 GRPO 训练：python scripts/train_grpo_kinship.py --sft_model_path ./outputs/sft_kinship/best_model
 
 使用方法：
+    # 直接使用预训练模型
     python scripts/train_grpo_kinship.py --data_path ./kinship/kinship.data
+    
+    # 使用SFT训练后的模型（推荐）
+    python scripts/train_grpo_kinship.py --sft_model_path ./outputs/sft_kinship/best_model --epochs 5
+    
+    # 多跳问答
     python scripts/train_grpo_kinship.py --multi_hop --epochs 10
 =====================================================================
 """
@@ -115,7 +126,10 @@ def parse_args():
     # 模型参数
     parser.add_argument('--model_path', type=str, 
                        default="/Users/xry/.cache/modelscope/hub/models/Qwen/Qwen2___5-7B-Instruct",
-                       help='模型路径')
+                       help='预训练模型路径（SFT训练前）')
+    
+    parser.add_argument('--sft_model_path', type=str, default=None,
+                       help='SFT训练后的模型路径（优先使用，覆盖model_path）')
     
     # 数据参数
     parser.add_argument('--data_path', type=str, 
@@ -198,7 +212,10 @@ def main():
     logger.info("GRPO Training with Kinship Dataset")
     logger.info("=" * 60)
     
-    logger.info(f"Model Path: {args.model_path}")
+    effective_model_path = args.sft_model_path if args.sft_model_path else args.model_path
+    logger.info(f"Model Path: {effective_model_path}")
+    if args.sft_model_path:
+        logger.info(f"  (从SFT模型加载: {args.sft_model_path})")
     logger.info(f"Data Path: {args.data_path}")
     logger.info(f"Output Dir: {args.output_dir}")
     logger.info(f"Group Size: {args.group_size}")
@@ -229,14 +246,38 @@ def main():
     
     # 加载模型和分词器
     logger.info("\n加载模型和分词器...")
-    model, tokenizer = load_model_and_tokenizer(
-        model_path=args.model_path,
-        load_in_4bit=args.load_in_4bit,
-        device=args.device,
-        torch_dtype="bfloat16",
-        pad_token=None,
+    
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+    from peft import PeftModel
+    
+    tokenizer = AutoTokenizer.from_pretrained(
+        effective_model_path,
         trust_remote_code=True
     )
+    
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+    
+    if args.sft_model_path:
+        logger.info(f"从SFT模型加载: {args.sft_model_path}")
+        base_model = AutoModelForCausalLM.from_pretrained(
+            args.model_path,
+            torch_dtype=torch.bfloat16 if args.load_in_4bit else torch.float32,
+            load_in_4bit=args.load_in_4bit,
+            device_map=args.device,
+            trust_remote_code=True
+        )
+        model = PeftModel.from_pretrained(base_model, args.sft_model_path)
+        logger.info("已加载SFT训练的LoRA权重")
+    else:
+        model, tokenizer = load_model_and_tokenizer(
+            model_path=effective_model_path,
+            load_in_4bit=args.load_in_4bit,
+            device=args.device,
+            torch_dtype="bfloat16",
+            pad_token=None,
+            trust_remote_code=True
+        )
     
     # 打印内存使用
     mem_info = get_model_memory_usage(model)

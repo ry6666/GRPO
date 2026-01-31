@@ -1,0 +1,302 @@
+[
+  {
+    "query": "Find Sophia's niece.",
+    "true_answer": "Angela",
+    "model_answer": "Sophia's sister's child",
+    "correct": false
+  },
+  {
+    "query": "Who is the mother of Pierro's husband?",
+    "true_answer": "Marco",
+    "model_answer": "Pierro's mother.",
+    "correct": false
+  },
+  {
+    "query": "Who is the wife of Emilio's brother?",
+    "true_answer": "Marco",
+    "model_answer": "Emilio's wife.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Lucia?",
+    "true_answer": "Lucia",
+    "model_answer": "Tomaso and Lucia are siblings.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Christopher and Penelope?",
+    "true_answer": "Penelope",
+    "model_answer": "son",
+    "correct": false
+  },
+  {
+    "query": "Who is the daughter of Charles's uncle?",
+    "true_answer": "Victoria",
+    "model_answer": "Charles's niece.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Francesca?",
+    "true_answer": "Francesca",
+    "model_answer": "Tomaso and Francesca are siblings.",
+    "correct": false
+  },
+  {
+    "query": "Who is the father of Roberto's husband?",
+    "true_answer": "Lucia",
+    "model_answer": "Roberto's husband's father.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Pierro through mother.",
+    "true_answer": "Lucia",
+    "model_answer": "Cousin",
+    "correct": false
+  },
+  {
+    "query": "Who is Pierro's father?",
+    "true_answer": "Marco",
+    "model_answer": "Pierro's father is Prince Ranier III.",
+    "correct": false
+  },
+  {
+    "query": "Who is the niece of Colin's brother?",
+    "true_answer": "Jennifer",
+    "model_answer": "Colin's niece.",
+    "correct": false
+  },
+  {
+    "query": "Who is the aunt of Christine's father?",
+    "true_answer": "Charlotte",
+    "model_answer": "Christine's aunt.",
+    "correct": false
+  },
+  {
+    "query": "Who is the sister of Christopher's father?",
+    "true_answer": "Arthur",
+    "model_answer": "Christopher's aunt.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Penelope through mother.",
+    "true_answer": "Colin",
+    "model_answer": "Oedipus",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Colin and Jennifer?",
+    "true_answer": "Jennifer",
+    "model_answer": "colleague",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Victoria through sister.",
+    "true_answer": "Penelope",
+    "model_answer": "Cousin",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Gina?",
+    "true_answer": "Gina",
+    "model_answer": "uncle and niece",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Gina and Emilio?",
+    "true_answer": "Emilio",
+    "model_answer": "daughter",
+    "correct": false
+  },
+  {
+    "query": "Victoria's mom is who?",
+    "true_answer": "Colin",
+    "model_answer": "Victoria's mom is the mother of Victoria.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through son.",
+    "true_answer": "Lucia",
+    "model_answer": "Grandfather",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Marco?",
+    "true_answer": "Marco",
+    "model_answer": "son",
+    "correct": false
+  },
+  {
+    "query": "Alfonso has a son. Who is he?",
+    "true_answer": "Lucia",
+    "model_answer": "Alfonso's son.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Alfonso and Sophia?",
+    "true_answer": "Sophia",
+    "model_answer": "spouse",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Jennifer through aunt.",
+    "true_answer": "Margaret",
+    "model_answer": "Cousin",
+    "correct": false
+  },
+  {
+    "query": "Who is married to Jennifer?",
+    "true_answer": "Charles",
+    "model_answer": "Owen Wilson",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through brother.",
+    "true_answer": "Roberto",
+    "model_answer": "Cousin",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Marco's father?",
+    "true_answer": "Angela",
+    "model_answer": "Marco's uncle.",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Gina's aunt?",
+    "true_answer": "Angela",
+    "model_answer": "Gina's cousin.",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Colin?",
+    "true_answer": "Charles",
+    "model_answer": "The nephew of Colin is the son of Colin's sibling.",
+    "correct": false
+  },
+  {
+    "query": "Who is the sister of Margaret's uncle?",
+    "true_answer": "Colin",
+    "model_answer": "Margaret.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Gina and Lucia?",
+    "true_answer": "Lucia",
+    "model_answer": "Daughter",
+    "correct": false
+  },
+  {
+    "query": "Who is the aunt of Christine's father?",
+    "true_answer": "Colin",
+    "model_answer": "Christine's aunt.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through uncle.",
+    "true_answer": "Gina",
+    "model_answer": "cousin",
+    "correct": false
+  },
+  {
+    "query": "Who is the sister of Sophia's niece?",
+    "true_answer": "Marco",
+    "model_answer": "Sophia's sister.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Charlotte and Christopher?",
+    "true_answer": "Christopher",
+    "model_answer": "sibling",
+    "correct": false
+  },
+  {
+    "query": "Who is the husband of Pierro's mother?",
+    "true_answer": "Lucia",
+    "model_answer": "The husband of Pierro's mother is not specified in your question.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Marco through brother.",
+    "true_answer": "Pierro",
+    "model_answer": "Cousin",
+    "correct": false
+  },
+  {
+    "query": "Who is the aunt of Tomaso's husband?",
+    "true_answer": "Alfonso",
+    "model_answer": "Tomaso's wife's mother.",
+    "correct": false
+  },
+  {
+    "query": "Who is the husband of Colin's niece?",
+    "true_answer": "Margaret",
+    "model_answer": "Colin's niece's husband cannot be determined from the given information.",
+    "correct": false
+  },
+  {
+    "query": "Who are the parents of Lucia?",
+    "true_answer": "Sophia",
+    "model_answer": "Lucia's parents are not specified.",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Charlotte through niece.",
+    "true_answer": "Christine",
+    "model_answer": "Grandniece",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through son.",
+    "true_answer": "Roberto",
+    "model_answer": "Grandfather",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Sophia through son.",
+    "true_answer": "Maria",
+    "model_answer": "Grandmother",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Charlotte through niece.",
+    "true_answer": "Penelope",
+    "model_answer": "Grandniece",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Alfonso through nephew.",
+    "true_answer": "Tomaso",
+    "model_answer": "Brother",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Marco through father.",
+    "true_answer": "Emilio",
+    "model_answer": "relative",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Penelope through mother.",
+    "true_answer": "Colin",
+    "model_answer": "Oedipus",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Sophia through daughter.",
+    "true_answer": "Marco",
+    "model_answer": "Grandmother",
+    "correct": false
+  },
+  {
+    "query": "Who is the mother of Arthur's son?",
+    "true_answer": "Victoria",
+    "model_answer": "The mother of Arthur's son is Guinevere.",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Sophia?",
+    "true_answer": "Sophia",
+    "model_answer": "son",
+    "correct": false
+  }
+]

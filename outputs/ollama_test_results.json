@@ -1,0 +1,182 @@
+[
+  {
+    "query": "Find Sophia's niece.",
+    "true_answer": "Angela",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the mother of Pierro's husband?",
+    "true_answer": "Marco",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the wife of Emilio's brother?",
+    "true_answer": "Marco",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Lucia?",
+    "true_answer": "Lucia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Christopher and Penelope?",
+    "true_answer": "Penelope",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the daughter of Charles's uncle?",
+    "true_answer": "Victoria",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Francesca?",
+    "true_answer": "Francesca",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the father of Roberto's husband?",
+    "true_answer": "Lucia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Pierro through mother.",
+    "true_answer": "Lucia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is Pierro's father?",
+    "true_answer": "Marco",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the niece of Colin's brother?",
+    "true_answer": "Jennifer",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the aunt of Christine's father?",
+    "true_answer": "Charlotte",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the sister of Christopher's father?",
+    "true_answer": "Arthur",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Penelope through mother.",
+    "true_answer": "Colin",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Colin and Jennifer?",
+    "true_answer": "Jennifer",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Victoria through sister.",
+    "true_answer": "Penelope",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Gina?",
+    "true_answer": "Gina",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Gina and Emilio?",
+    "true_answer": "Emilio",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Victoria's mom is who?",
+    "true_answer": "Colin",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through son.",
+    "true_answer": "Lucia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Tomaso and Marco?",
+    "true_answer": "Marco",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Alfonso has a son. Who is he?",
+    "true_answer": "Lucia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "What is the relationship between Alfonso and Sophia?",
+    "true_answer": "Sophia",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Jennifer through aunt.",
+    "true_answer": "Margaret",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is married to Jennifer?",
+    "true_answer": "Charles",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Find the relative of Emilio through brother.",
+    "true_answer": "Roberto",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Marco's father?",
+    "true_answer": "Angela",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Gina's aunt?",
+    "true_answer": "Angela",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the nephew of Colin?",
+    "true_answer": "Charles",
+    "model_answer": "",
+    "correct": false
+  },
+  {
+    "query": "Who is the sister of Margaret's uncle?",
+    "true_answer": "Colin",
+    "model_answer": "",
+    "correct": false
+  }
+]
